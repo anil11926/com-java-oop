@@ -63,7 +63,7 @@ public class Main {
         customer.age = 23;
         customer.gender = 'M';
         customer.contactNumber = 6358428972L;
-        customer.eMail = "balur@gmail.com";
+        customer.email = "balur@gmail.com";
         customer.address = "H-NO: 10-5,manikonda,hyd,telangana";
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("             Customer1");
@@ -72,7 +72,7 @@ public class Main {
         System.out.println("Age: " +customer.age);
         System.out.println("Gender: " + customer.gender);
         System.out.println("Contact number: "+ customer.contactNumber);
-        System.out.println("E-mail: " + customer.eMail);
+        System.out.println("E-mail: " + customer.email);
         System.out.println("Address: " + customer.address);
 
         // Customer2
@@ -83,7 +83,7 @@ public class Main {
         customer2.age = 22;
         customer2.gender = 'M';
         customer2.contactNumber = 6358428974L;
-        customer2.eMail = "anilkumar@gmail.com";
+        customer2.email = "anilkumar@gmail.com";
         customer2.address = "H-NO: 10-25,madhapur,hyd,telangana";
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("             Customer2");
@@ -92,7 +92,70 @@ public class Main {
         System.out.println("Age: " +customer2.age);
         System.out.println("Gender: " + customer2.gender);
         System.out.println("Contact number: "+ customer2.contactNumber);
-        System.out.println("E-mail: " + customer2.eMail);
+        System.out.println("E-mail: " + customer2.email);
         System.out.println("Address: " + customer2.address);
+
+
+
+// customer 3 with no-arg constructor
+
+        Customer customer3 = new Customer();
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("             Customer3");
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("ID: " + customer3.id);
+        System.out.println("Age: " +customer3.age);
+        System.out.println("Gender: " + customer3.gender);
+        System.out.println("Contact number: "+ customer3.contactNumber);
+        System.out.println("E-mail: " + customer3.email);
+        System.out.println("Address: " + customer3.address);
+
+
+        // customer 4 with arg constructor
+        Customer customer4 = new Customer(564,"anilkumar","anilkumar@gamil.com",564896234,(byte)23,'M',"madhapur");
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("             Customer4");
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("ID: " + customer4.id);
+        System.out.println("Age: " +customer4.age);
+        System.out.println("Gender: " + customer4.gender);
+        System.out.println("Contact number: "+ customer4.contactNumber);
+        System.out.println("E-mail: " + customer4.email);
+        System.out.println("Address: " + customer4.address);
+
+// not arg constructor
+        Product product3 = new Product();
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("             Product3");
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("ID: " + product3.id);
+        System.out.println("Name: " + product3.name);
+        System.out.println("Max Retail price :" + product3.maxRetailPrice);
+        System.out.println("Rating: " + product3.rating);
+        System.out.println("Reviews Count: " + product3.reviewsCount);
+        System.out.println("Discount Percentage: " + product3.discountPercentage);
+        System.out.println("Is Available: " + product3.isAvailable);
+        System.out.println("Company: "+ product3.company);
+        System.out.println("Category: " + product3.category);
+
+
+        Product product4 = new Product(890,"Samsung 9 kg 5 Star, AI Ecobubble, Super Speed,",38490,4.3F,22395,(byte) 25,true,"Samsung","Washing Machine");
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("             Product3");
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("ID: " + product4.id);
+        System.out.println("Name: " + product4.name);
+        System.out.println("Max Retail price :" + product4.maxRetailPrice);
+        System.out.println("Rating: " + product3.rating);
+        System.out.println("Reviews Count: " + product4.reviewsCount);
+        System.out.println("Discount Percentage: " + product4.discountPercentage);
+        System.out.println("Is Available: " + product4.isAvailable);
+        System.out.println("Company: "+ product4.company);
+        System.out.println("Category: " + product4.category);
+
+
+
+
+
     }
 }
