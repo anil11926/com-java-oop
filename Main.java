@@ -141,7 +141,7 @@ public class Main {
 
         Product product4 = new Product(890,"Samsung 9 kg 5 Star, AI Ecobubble, Super Speed,",38490,4.3F,22395,(byte) 25,true,"Samsung","Washing Machine");
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        System.out.println("             Product3");
+        System.out.println("             Product4");
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("ID: " + product4.id);
         System.out.println("Name: " + product4.name);
