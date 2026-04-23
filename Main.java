@@ -103,7 +103,7 @@ public class Main {
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("             Customer3");
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        System.out.println("ID: " + customer3.id);
+        System.out.println("ID:  " + customer3.id);
         System.out.println("Age: " +customer3.age);
         System.out.println("Gender: " + customer3.gender);
         System.out.println("Contact number: "+ customer3.contactNumber);
