@@ -126,7 +126,7 @@ public class Main {
 // not arg constructor
         Product product3 = new Product();
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        System.out.println("             Product3");
+        System.out.println("            Product3");
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("ID: " + product3.id);
         System.out.println("Name: " + product3.name);
