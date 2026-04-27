@@ -3,19 +3,19 @@ package com.java.oop.inheritance;
 public class Customer {
     int id;
     String name;
-    byte age;
-    char gender;
     String email;
-    long mobileNumber;
-    String address;
+    char gender;
+    byte age;
+    long mobileNo;
 
-    public Customer(int id, String name, byte age, char gender, String email, long phoneNumber, String address) {
+    public Customer(int id, String name, String email, char gender, byte age, long mobileNo) {
         this.id = id;
         this.name = name;
-        this.age = age;
-        this.gender = gender;
         this.email = email;
-        this.mobileNumber = phoneNumber;
+        this.gender = gender;
+        this.age = age;
+        this.mobileNo = mobileNo;
+
     }
     double calculateFinalPrice(Product product){
         return product.getDiscountedPrice();
@@ -26,7 +26,7 @@ public class Customer {
         System.out.println("age :" +age);
         System.out.println("email :" +email);
         System.out.println("gender :" +gender);
-        System.out.println("mobile no :" +mobileNumber);
+        System.out.println("mobile no :" +mobileNo);
     }
     void display(Product product){
         displayCustomerDetails();
@@ -39,5 +39,4 @@ public class Customer {
         System.out.println("discount :" +product.discountPercentage);
         System.out.println("price after discount :" +product.getDiscountedPrice());
     }
-
 }
