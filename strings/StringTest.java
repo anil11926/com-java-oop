@@ -4,7 +4,7 @@ import com.java.oop.Product;
 
 public class StringTest {
         StringTest() {
-            System.out.println("my String constructor");
+            System.out.println("My String constructor");
         }
 
         static void main(String[] args) {
