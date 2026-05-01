@@ -58,7 +58,7 @@ public class StringDemo {
 
         //remove trailing and leading spaces
 
-        String s3 = "   java programming  "; //remove whitespaces
+        String s3 = "   Java programming  "; //remove whitespaces
         System.out.println(s3.trim());
 
         //remove all spaces
