@@ -6,7 +6,6 @@ public class StringTest {
         StringTest() {
             System.out.println("My String constructor");
         }
-
         static void main(String[] args) {
             //com.java.oop.strings.Strings
             StringTest str = new StringTest();
@@ -38,7 +37,7 @@ public class StringTest {
             String name = "John";
             name = name.concat(", how are you?");
             System.out.println(name);
-            String username = "vinay";
+            String username = "Vinay";
             String password = "abcd@1234";
             if (username.isEmpty() || password.isEmpty()) {
                 System.out.println("enter the details");
@@ -46,7 +45,7 @@ public class StringTest {
             if (username.equalsIgnoreCase("viNay") && password.equals("abcd21234")) {
                 System.out.println("Login successful");
             } else
-                System.out.println("login failed! invalid credentials ");
+                System.out.println("Login failed! invalid credentials ");
 
             String usernamePattern = "^[a-zA-Z0-9_]{4,15}$";
             System.out.println(username.matches(usernamePattern));
@@ -71,8 +70,5 @@ public class StringTest {
             System.out.println(password1.trim().length());
             int mobileNo = 324234;
             System.out.println(String.valueOf(mobileNo));
-
         }
-
     }
-
