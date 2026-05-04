@@ -37,4 +37,7 @@ public class Customer {
 
 
     }
+
+    public Customer(int i, String customer1, String mail, String number, long l) {
+    }
 }
