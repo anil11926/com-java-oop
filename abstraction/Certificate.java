@@ -13,5 +13,6 @@ public class Certificate {
         this.issuedBy = issuedBy;
         this.issuedTo = issuedTo;
         this.issuedDate = issuedDate;
+
     }
 }

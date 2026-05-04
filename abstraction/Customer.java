@@ -13,5 +13,6 @@ public class Customer {
         this.email = email;
         this.aadhaarNo = aadhaarNo;
         this.phoneNo = phoneNo;
+
     }
 }

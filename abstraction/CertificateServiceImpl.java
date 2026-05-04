@@ -10,5 +10,6 @@ public class CertificateServiceImpl extends CertificateService {
     @Override
     public Certificate getCertificate(ApplicationForm applicationForm) {
         return attender.processsCertificate(applicationForm);
+
     }
 }
