@@ -9,13 +9,15 @@ public class Main {
         ApplicationForm applicationForm = new ApplicationForm(1,"birth Certificate",customer);
         Mro mro = new Mro(1,"MRO1",10000);
         Attender attender = new Attender(1,10000,"Attender",mro);
+        PrintService printService = new ColourPrintService();
 
         CertificateService certificateService = new CertificateServiceImpl(attender);
         Certificate certificate = certificateService.getCertificate(applicationForm);
         System.out.println("Id : " + certificate.id
-             +   "\n Name : " + certificate.name
-        + "\n Name : " + certificate.issuedBy
-        + "\n Name : " + certificate.issuedTo
-                +"\n Name : " + certificate.issuedDate );
+             +   "\n Certificate Name : " + certificate.name
+        + "\n Certificate Issued by : " + certificate.issuedBy
+        + "\n Certificate Issued to : " + certificate.issuedTo
+                +"\n Certificate Issued date : " + certificate.issuedDate );
+        printService.printCertificate(certificate);
     }
 }

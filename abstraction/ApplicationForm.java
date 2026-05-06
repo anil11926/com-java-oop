@@ -12,5 +12,6 @@ public class ApplicationForm {
 
     }
 
-
+    public ApplicationForm(int id, String birthCertificate, com.java.oop.Customer customer) {
+    }
 }

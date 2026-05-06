@@ -17,9 +17,6 @@ public class Attender {
             return mro.generatecertificate(form);
         }else {
             return null;
-
         }
     }
-
-
 }
