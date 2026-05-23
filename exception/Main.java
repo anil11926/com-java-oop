@@ -19,7 +19,7 @@ public class Main {
             }
             try {
                 int[] ids = new int[5];
-                ids[30] = 100;
+                ids[3] = 100;
             }catch (NegativeArraySizeException|ArrayIndexOutOfBoundsException e){
                 System.out.println("some issues in array");
                 input();
@@ -44,7 +44,7 @@ public class Main {
             System.out.println("null pointer exception");
             input();
         }*/
-        catch (Exception e) {
+        catch (ArithmeticException e) {
             System.out.println("some internal error occured");
             System.out.println("Reason : " + e.getMessage());
             input();
