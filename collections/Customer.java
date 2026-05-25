@@ -40,7 +40,6 @@ public class Customer implements Comparable<Customer> {
         return this.name.compareTo(o.name);
     }
 
-    ;
     }
 
 

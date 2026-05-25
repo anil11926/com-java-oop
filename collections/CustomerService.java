@@ -13,7 +13,7 @@ public class CustomerService {
         System.out.println("id : " + customer.id);
         System.out.println("name : " + customer.name);
         System.out.println("Email : " + customer.id);
-        System.out.println("----------------------------------------------------");
+        System.out.println("---------------------------------------------------");
 
     }
     public List<Customer> getCustomerList(){
@@ -31,10 +31,4 @@ public class CustomerService {
         return null;
     }
 
-    public List<Customer> getCustomers() {
-
-    }
-
-    public void displayAllCustomer(List<Customer> customers) {
-    }
 }

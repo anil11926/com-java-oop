@@ -12,5 +12,6 @@ public class InputUtil {
     public static String getString(String message){
         System.out.println(message);
         return scanner.next();
+
     }
 }

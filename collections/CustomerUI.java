@@ -12,7 +12,5 @@ public class CustomerUI {
             return customer;
 
 
-
-
         }
     }
