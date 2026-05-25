@@ -2,10 +2,10 @@ package com.java.oop.collections;
 
 import java.util.Objects;
 
-public class Customer {
-    int id;
-    String name;
-    String email;
+public class Customer implements Comparable<Customer> {
+    public int id;
+    public String name;
+    public String email;
 
 
     public Customer(int id, String name, String email) {
@@ -34,4 +34,13 @@ public class Customer {
                 ", email='" + email + '\'' +
                 '}';
     }
-}
+
+    @Override
+    public int compareTo(Customer o) {
+        return this.name.compareTo(o.name);
+    }
+
+    ;
+    }
+
+
