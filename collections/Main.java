@@ -7,17 +7,19 @@ public class Main {
         //1. Display all customer
         //2. Add new customer
         CustomerService customerService = new CustomerService();
-        List<Customer> customers = customerService.getCustomers();
+        List<Customer> customers = customerService.getCustomer();
         customerService.displayAllCustomer(customers);
 
         //Add new customer
         CustomerUI ui = new CustomerUI();
         Customer customer = ui.displaySignupForm();
-        boolean isSuccess = customerService.addCustomer(customer);
+        /*boolean isSuccess = customerService.addCustomer(customer);
         if(isSuccess)
             System.out.println("Customer added successfully  " + customer.name);
         else
             System.out.println("Customer not added");
+
+         */
 
         Customer savedCustomer = customerService.addCustomer(customer);
         if (savedCustomer != null)

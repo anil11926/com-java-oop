@@ -16,7 +16,14 @@ public class CustomerService {
         System.out.println("---------------------------------------------------");
 
     }
-    public List<Customer> getCustomerList(){
+    public void displayAllCustomer(List<Customer>customers){
+        for (Customer customer : customers){
+            displayCustomer(customer);
+        }
+    }
+
+
+    public List<Customer> getCustomer(){
         customerList.add(new Customer(111,"Customer1","customer1@gmial.com"));
         customerList.add(new Customer(222,"customer2","customer2@gmail.com"));
         customerList.add(new Customer(333,"Customer3","customer3@gmial.com"));
@@ -28,7 +35,10 @@ public class CustomerService {
     }
 
     public Customer addCustomer(Customer customer) {
-        return null;
+        customerList.add(customer);
+        return customer;
     }
+
+
 
 }

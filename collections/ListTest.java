@@ -10,7 +10,7 @@ public class ListTest {
    public static void main(String[] args) {
 
         CustomerService customerService = new CustomerService();
-        List<Customer> customers = customerService.getCustomers();
+        List<Customer> customers = customerService.getCustomer();
         for (Customer customer : customers){
             customerService.displayCustomer(customer);
         }
