@@ -1,29 +1,27 @@
 package com.java.oop.enums;
 
-import com.java.oop.strings.Customer1;
-
 public class Main {
     public static void main(String[] args) {
 
-        Customer customer1 = new Customer(
+        Employee employee1 = new Employee(
                 "Anil Kumar",
                 "anil@gmail.com",
                 9876543210L,
                 Gender.MALE
         );
 
-        Customer customer2 = new Customer(
+        Employee employee2 = new Employee(
                 "Priya",
                 "priya@gmail.com",
-                9123456780L,
+                9123456780L ,
                 Gender.FEMALE
         );
 
-        customer1.displayCustomerDetails();
+        employee1.displayCustomerDetails();
 
         System.out.println();
 
-        customer2.displayCustomerDetails();
+        employee2.displayCustomerDetails();
     }
 
 

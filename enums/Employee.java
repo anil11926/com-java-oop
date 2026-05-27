@@ -1,20 +1,25 @@
 package com.java.oop.enums;
 
-public class Customer {
+public class Employee {
     private String name ;
     private  String email;
     private long phoneNumber;
     private Gender gender;
+    private Department department;
+    private Role role;
 
 
-    public Customer(String name, String email, long phoneNumber, Gender gender) {
+
+
+    public Employee(String name, String email, long phoneNumber, Gender gender, Department department, Role role) {
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
         this.gender = gender;
+        this.department = department;
+        this.role = role;
     }
-
-    //getters
+//getters
 
     public String getName() {
         return name;
@@ -30,6 +35,8 @@ public class Customer {
     public Gender getGender() {
         return gender;
     }
+    public Department
+
     //setters
 
 
